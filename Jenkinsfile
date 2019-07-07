@@ -4,6 +4,7 @@ pipeline {
     stage('Install') {
       steps {
         sh 'npm install'
+        git 'git@34.77.9.203:user12/jenkins-pipeline-itayer.git'
       }
     }
     stage('test') {
